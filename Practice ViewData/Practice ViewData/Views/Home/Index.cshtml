@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@*<p>@ViewData["Name"]</p>
+<p>@ViewData["FatherName"]</p>*@
+
+@*<ul>
+    @foreach (var s in ViewData["Names"] as System.Array)
+    {
+        <li>@s</li>
+    }
+</ul>*@
+
+<ul>
+    @foreach (var s in ViewData["NameList"] as List<Practice_ViewData.Models.Student>)
+    {
+        <li>Name: @s.Name</li>
+        <li>FatherName: @s.FatherName</li>
+    }
+</ul>

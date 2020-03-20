@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@*<p>Name:  @ViewBag.Name</p>
+<p>Age:  @ViewBag.Age</p>*@
+@*<ul>
+@foreach (var s in ViewBag.namelist as System.Array)
+{
+   <li>@s</li> 
+}
+</ul>*@
+@*@{
+    
+var s=ViewBag.Student;
+
+}
+<p>@s.Id</p>
+<p>@s.Name</p*@>
+
+
+<ul>
+   @foreach (var s in ViewBag.StudentList as List<Practice_viewbag.Models.Student>)
+   {
+       <li>Id=@s.Id</li>
+       <li>Name=@s.Name</li>
+       
+   }
+</ul>
+
