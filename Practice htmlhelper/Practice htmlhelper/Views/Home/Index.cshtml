@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>HTML Helper</h2>
+@using(Html.BeginForm())
+{
+    <p>First Number: @Html.TextBox("FirstNumber")</p>
+    <p>Second Number: @Html.TextBox("SecondNumber")</p>
+    <p><input type="submit" value="Get Result" /></p>
+    <p>Result:  @ViewBag.Result</p>
+}
