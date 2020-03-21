@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@Html.ValidationSummary()
+@using(Html.BeginForm())
+{
+    <p>
+        Name: @Html.TextBox("Name")
+        @Html.ValidationMessage("Name")
+@*        @ViewBag.NameError;*@
+
+    </p>
+    <p>
+        Contact: @Html.TextBox("Contact")
+        @Html.ValidationMessage("Contact")
+@*                @ViewBag.ContactError*@
+
+    </p>
+    <p>
+        Email: @Html.TextBox("Email")
+        @Html.ValidationMessage("Email")
+@*                @ViewBag.EmailError;*@
+
+    </p>
+    <p>
+        Date: @Html.TextBox("Date")
+        @Html.ValidationMessage("Date")
+@*                @ViewBag.DateError;*@
+
+    </p>
+
+    <p><input type="submit" value="Save" /></p>
+    @Html.Raw(ViewBag.AlertMessage)
+}
