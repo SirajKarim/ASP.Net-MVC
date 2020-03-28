@@ -1,0 +1,101 @@
+﻿@model MvcApplication4.Models.Manufacturer
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<center><h2 class="h3 mb-3 text-black">Customer</h2></center>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+
+
+
+
+        <center>
+            <div class="col-md-7">
+
+                <form action="#" method="post">
+
+                    <center>
+                        <div class="p-3 p-lg-5 border">
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.ManufacturerID)
+                                    @Html.EditorFor(model => model.ManufacturerID)
+                                    @Html.ValidationMessageFor(model => model.ManufacturerID)
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.ManufacturerName)
+                                    @Html.EditorFor(model => model.ManufacturerName)
+                                    @Html.ValidationMessageFor(model => model.ManufacturerName)
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.Address)
+                                    @Html.EditorFor(model => model.Address)
+                                    @Html.ValidationMessageFor(model => model.Address)
+
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    @Html.LabelFor(model => model.Email)
+                                    @Html.EditorFor(model => model.Email)
+                                    @Html.ValidationMessageFor(model => model.Email)
+
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    @Html.LabelFor(model => model.Contact_No)
+                                    @Html.EditorFor(model => model.Contact_No)
+                                    @Html.ValidationMessageFor(model => model.Contact_No)
+
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    @Html.LabelFor(model => model.Detail)
+                                    @Html.EditorFor(model => model.Detail)
+                                    @Html.ValidationMessageFor(model => model.Detail)
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </center>
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Create">
+                </form>
+
+            </div>
+        </center>
+    </fieldset>
+}
+
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+

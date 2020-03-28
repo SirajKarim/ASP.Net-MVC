@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        @RenderSection("head", required: false)
+        <title>MK SPORTS &mdash; -online shopping</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href=@Url.Content("/Content/https://fonts.googleapis.com/css?family=Mukta:300,400,700")>
+        <link rel="stylesheet" href=@Url.Content("/Content/fonts/icomoon/style.css")>
+        <link rel="stylesheet" href=@Url.Content("/Content/css/bootstrap.min.css") >
+        <link rel="stylesheet" href=@Url.Content("/Content/css/magnific-popup.css")>
+        <link rel="stylesheet" href=@Url.Content("/Content/css/jquery-ui.css")>
+        <link rel="stylesheet" href=@Url.Content("/Content/css/owl.carousel.min.css")>
+        <link rel="stylesheet" href=@Url.Content("/Content/css/owl.theme.default.min.css")>
+        <link rel="stylesheet" href=@Url.Content("/Content/css/aos.css")>
+        <link rel="stylesheet" href=@Url.Content("/Content/css/style.css")>
+
+    </head>
+    <body>
+
+        <div class="site-wrap">
+            <header class="site-navbar" role="banner">
+                <div class="site-navbar-top">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                                @*<form action="" class="site-block-top-search">
+                                    <span class="icon icon-search2"></span>
+                                    <input type="text" class="form-control border-0" placeholder="Search">
+                                </form>*@
+                            </div>
+                            <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                                <div class="site-logo">
+                                    <a href="/Home/index/index.cshtml" class="js-logo-clone"> MK Sports</a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                                <div class="site-top-icons">
+                                    <ul>
+                                        <li><a href="/Admin/Index/Index.cshtml"><span class="icon icon-person"></span></a></li>
+                                 
+                                        <li>
+                                            <a href="cart.html" class="site-cart">
+                                                <span class="icon icon-shopping_cart"></span>
+                                                <span class="count">2</span>
+                                            </a>
+                                        </li>
+                                        <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="site-navigation text-right text-md-center" role="navigation">
+                    <div class="container">
+                        <ul class="site-menu js-clone-nav d-none d-md-block">
+
+                            <li class="has-children active">
+                                <a href="/Home/index/index.cshtml">Admin Panel</a>
+                                <ul class="dropdown">
+                                    <li class="has-children active">
+                                        <a href="#">Products</a>
+                                        <ul class="dropdown">
+                                            <li><a href="/Shop/Add/Add.cshtml">New Arrivals</a></li>
+                                            <li><a href="/Shop/ShowCart/ShowCart.cshtml">Available Products  </a></li>
+
+                                        </ul>
+                                    <li class="has-children active">
+                                        <a href="#">Customers</a>
+                                        <ul class="dropdown">
+
+                                            <li><a href="/Customer/Add/Add.cshtml">New Customer</a></li>
+                                            <li><a href="/Customer/ShowAll/ShowAll.cshtml"> Registered Customers </a></li>
+
+
+                                        </ul>
+                                    <li class="has-children active">
+                                        <a href="#"> Employers</a>
+                                        <ul class="dropdown">
+
+                                            <li><a href="/Employee/Add/Add.cshtml">New Employee </a></li>
+                                            <li><a href="/Employee/ShowAll/ShowAll">Registered Employers</a></li>
+                                        </ul>
+                                    <li class="has-children active">
+                                        <a href="#"> Manufacturers </a>
+                                        <ul class="dropdown">
+                                            <li><a href="/Manufacturer/Add/Add.cshtml"> New Manufacturer</a></li>
+                                            <li><a href="/Manufacturer/ShowAll/ShowAll.cshtml"> Registered Manufacturers  </a></li>
+             </ul>
+                                              <li class="has-children active">
+             <a href="#">Complain</a>
+            <ul class="dropdown">
+                <li><a href="/ContactUs/ShowAll/ShowAll.cshtml">Registered Feedback</a></li>
+            </ul>
+        @*   <li class="has-children active">
+            <a href="#">Racket Sports</a>
+            <ul class="dropdown">
+                <li><a href="#">Badminton</a></li>
+                <li><a href="#">Table Tennis</a></li>
+            </ul>
+        <li class="has-children active">
+            <a href="#">Skating</a>
+            <ul class="dropdown">
+                <li><a href="#">Skating Shoes</a></li>
+                <li><a href="#">Skating Protection</a></li>
+                <li><a href="#">Skating Boards</a></li>
+                <li><a href="#">Scooty</a></li>
+            </ul>
+        <li class="has-children active">
+            <a href="#"> Swimming</a>
+            <ul class="dropdown">
+                <li><a href="#">Swimwear</a></li>
+                <li><a href="#">Swimming Goggles</a></li>
+                <li><a href="#">Swimming Bags</a></li>
+                <li><a href="#"> Nose Clip & Ear Plug</a></li>
+                <li><a href="#">Snorkel & Fins</a></li>
+                <li><a href="#">Kickboard & Pullbuoy</a></li>
+            </ul>
+        </li>*@
+
+                                </ul>
+
+
+                            </li>
+                            <li><a href="/Home/index/index.cshtml">Home</a></li>
+                            @*<li class="has-children active">
+                                <a href="/Shop/Shop/Shop.cshtml">SHOP</a>*@
+                            <li> <a href="/Shop/ShowCart/ShowCart.cshtml">Shop</a> </li>
+
+                          
+
+                            
+                             
+
+                            
+                            @*<li class="has-children">
+                                <a href="">Product</a>
+                                <ul class="dropdown">
+                                    <li><a href="/Shop/Add/Add.cshtml">New Arrivals</a></li>
+                                    <li><a href="/Product/ShowAll/ShowAll.cshtml">Available Products</a></li>
+                                    <li><a href="/Shop/Add/Add.cshtml">Add To Database </a></li>
+                                    <li><a href="/Shop/ShowCart/ShowCart.cshtml">Shop </a></li>
+                                  
+                                   
+                             </ul>
+
+
+
+                            <li class="has-children">
+                                <a href="">Customer</a>
+                                <ul class="dropdown">
+                                    <li><a href="/Customer/Add/Add.cshtml">New Customer</a></li>
+                                    <li><a href="/Customer/ShowAll/ShowAll.cshtml">Registered Customers</a></li>
+                                    
+                                    
+
+                                </ul>
+                        
+                                    <li><a href="/Admin/Index/Index.cshtml">Manufacturer</a></li>*@
+                                    <li> <a href="/Home/About/About.cshtml">About</a> </li>
+                                    <li><a href="/ContactUs/Add/Add.cshtml">Feedback </a></li>
+                                 </ul>
+</div>
+                </nav>
+            </header>
+
+
+
+
+            <div>
+                @RenderBody()
+            </div>
+
+
+
+            <footer class="site-footer border-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="footer-heading mb-4">Navigations</h3>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Sell online</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Shopping cart</a></li>
+                                        <li><a href="#">Store builder</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Mobile commerce</a></li>
+                                        <li><a href="#">Dropshipping</a></li>
+                                        <li><a href="#">Website development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#">Point of sale</a></li>
+                                        <li><a href="#">Hardware</a></li>
+                                        <li><a href="#">Software</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <h3 class="footer-heading mb-4">Promo</h3>
+                            <a href="#" class="block-6">
+                                <img src=@Url.Content("/Content/images/1697799a-bb30-4b86-abde-04d75f52fcfa.png") alt="Image placeholder" class="img-fluid rounded mb-4">
+                                <h3 class="font-weight-light  mb-0">Finding Your Perfect Sports Fanatics </h3>
+                                <p>Promo from  May 27 &mdash; 25, 2019</p>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="block-5 mb-5">
+                                <h3 class="footer-heading mb-4">Contact Info</h3>
+                                <ul class="list-unstyled">
+                                    <li class="address">D-28,
+Sector-30
+Korangi Industrial Area
+Karachi, Pakistan</li>
+                                    <li class="phone"><a href="tel://23923929210">03438076531</a></li>
+                                    <li class="email">iamkamran27@gmail.com</li>
+                                </ul>
+                            </div>
+                            <div class="block-7">
+                                <form action="#" method="post">
+                                    <label for="email_subscribe" class="footer-heading">Subscribe</label>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
+                                        <input type="submit" class="btn btn-sm btn-primary" value="Send">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-5 mt-5 text-center">
+                        <div class="col-md-12">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                                <script>document.write(new Date().getFullYear());</script> © All Rights Reserved. <i class="icon-heart" aria-hidden="true"></i> 
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+
+
+
+        <script src=@Url.Content("/Content/js/jquery-3.3.1.min.js")></script>
+        <script src=@Url.Content("/Content/js/jquery-ui.js")></script>
+        <script src=@Url.Content("/Content/js/popper.min.js")></script>
+        <script src=@Url.Content("/Content/js/bootstrap.min.js")></script>
+        <script src=@Url.Content("/Content/js/owl.carousel.min.js")></script>
+        <script src=@Url.Content("/Content/js/jquery.magnific-popup.min.js")></script>
+        <script src=@Url.Content("/Content/js/aos.js")></script>
+        <script src=@Url.Content("/Content/js/main.js")></script>
+
+
+
+
+
+</body>
+</html>

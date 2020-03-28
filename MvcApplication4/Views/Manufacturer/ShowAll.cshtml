@@ -1,0 +1,106 @@
+﻿@model IEnumerable<MvcApplication4.Models.Manufacturer>
+
+@{
+    ViewBag.Title = "ShowAll";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<
+<head>
+    <title>Table V04</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href=@Url.Content("/Content/List/images/icons/favicon.icon" ) />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/List/vendor/bootstrap/css/bootstrap.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/List/fonts/font-awesome-4.7.0/css/font-awesome.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/List/vendor/animate/animate.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/List/vendor/select2/select2.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/List/vendor/perfect-scrollbar/perfect-scrollbar.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/List/css/util.css")>
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/List/css/main.css")>
+    <!--===============================================================================================-->
+</head>
+<body>
+    <center>
+        <br>
+        <div class="col-md-12">
+            <h2 class="h3 mb-3 text-black">Registered Customers  </h2>
+        </div>
+    </center>
+    <p>
+        @Html.ActionLink("Add New Manufacturer ", "Add")
+    </p>
+    <div class="table100 ver1 m-b-140">
+        <div class="table130-head">
+            <table>
+                <thead>
+                    <tr class="row100 head">
+                        <th class="cell100 column1"> @Html.DisplayNameFor(model => model.ManufacturerID) </th>
+                        <th class="cell100 column2">@Html.DisplayNameFor(model => model.ManufacturerName) </th>
+                        <th class="cell100 column3">@Html.DisplayNameFor(model => model.Address)</th>
+                        <th class="cell100 column4">@Html.DisplayNameFor(model => model.Email) </th>
+                        <th class="cell100 column5">@Html.DisplayNameFor(model => model.Contact_No)</th>
+                        <th class="cell100 column6">@Html.DisplayNameFor(model => model.Detail)</th>
+                        <th class="cell100 column7">Actions </th>
+
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="table100-body js-pscroll ps ps--active-y">
+            <table>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="row100 body">
+                            <td class="cell100 column1">@Html.DisplayFor(modelItem => item.ManufacturerID)</td>
+                            <td class="cell100 column2">@Html.DisplayFor(modelItem => item.ManufacturerName)</td>
+                            <td class="cell100 column3">@Html.DisplayFor(modelItem => item.Address)</td>
+                            <td class="cell100 column4">@Html.DisplayFor(modelItem => item.Email)</td>
+                            <td class="cell100 column5">@Html.DisplayFor(modelItem => item.Contact_No)</td>
+                            <td class="cell100 column6">@Html.DisplayFor(modelItem => item.Detail)</td>
+
+                            <td class="cell100 column7">@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })</td>
+
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+            <div class="ps__rail-x" style="left: 0px; bottom: -581px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 581px; height: 585px; right: 5px;"><div class="ps__thumb-y" tabindex="0" style="top: 292px; height: 293px;"></div></div>
+        </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/List/vendor/jquery/jquery-3.2.1.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/List/vendor/bootstrap/js/popper.js")></script>
+    <script src=@Url.Content("/Content/List/vendor/bootstrap/js/bootstrap.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/List/vendor/select2/select2.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/List/vendor/perfect-scrollbar/perfect-scrollbar.min.js")></script>
+    <script>
+        $('.js-pscroll').each(function () {
+            var ps = new PerfectScrollbar(this);
+
+            $(window).on('resize', function () {
+                ps.update();
+            })
+        });
+
+
+    </script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/List/js/main.js")></script>
+</body>

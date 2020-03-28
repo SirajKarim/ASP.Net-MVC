@@ -1,0 +1,121 @@
+﻿@model MvcApplication4.Models.Admin
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <title>Login V16</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href=@Url.Content("/Content/AdminLogin/images/icons/favicon.icon") />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/vendor/bootstrap/css/bootstrap.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/fonts/font-awesome-4.7.0/css/font-awesome.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/fonts/Linearicons-Free-v1.0.0/icon-font.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/vendor/animate/animate.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/vendor/css-hamburgers/hamburgers.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/fvendor/animsition/css/animsition.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/fvendor/select2/select2.min.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/fvendor/daterangepicker/daterangepicker.css")>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/css/util.css")>
+    <link rel="stylesheet" type="text/css" href=@Url.Content("/Content/AdminLogin/css/main.css")>
+    <!--===============================================================================================-->
+</head>
+<body>
+
+
+
+    <div class="container-login100" style="background-image: url(/Content/AdminLogin/images/bg-01.jpg);">
+        <div class="wrap-login100 p-t-30 p-b-50">
+            <Center>
+            <div class="login100-form-avatar">
+                <img src=@Url.Content("/Content/AdminLogin/images/IMG_20180303_023004_869.jpg") alt="AVATAR">
+            </div>
+                </Center>
+            <span class="login100-form-title p-t-20 p-b-45">
+                Muhammad Kamran
+            </span>
+
+
+
+            <span class="login100-form-title p-b-41">
+                Sign In
+            </span>
+            @using (Html.BeginForm("Index","Admin"))
+            { 
+            <form class="login100-form validate-form p-b-33 p-t-5">
+
+
+
+
+
+                <div class="wrap-input100 validate-input" data-validate="Enter username">
+
+                    <input class="input100" type="text"  name="UserID" placeholder="User name">
+                    @*@Html.EditorFor(model => model.UserID)*@
+                    
+                    <span class="field-validation-valid" data-valmsg-for="UserID" data-valmsg-replace="true"></span>
+
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Enter password">
+                    <input class="input100" type="password"  name="Password" placeholder="Password">
+                    @*@Html.EditorFor(model => model.Password)*@
+                    
+
+                </div>
+
+                <div class="container-login100-form-btn m-t-32">
+                    <button type="submit" class="login100-form-btn">
+                        Login
+                    </button>
+                </div>
+
+
+
+
+            </form>
+            }
+        </div>
+    </div>
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+
+
+
+
+
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/AdminLogin/vendor/jquery/jquery-3.2.1.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/AdminLogin/vendor/animsition/js/animsition.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/AdminLogin/vendor/bootstrap/js/popper.js")></script>
+    <script src=@Url.Content("/Content/AdminLogin/vendor/bootstrap/js/bootstrap.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/AdminLogin/vendor/select2/select2.min.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/AdminLogin/vendor/daterangepicker/moment.min.js")></script>
+    <script src=@Url.Content("/Content/AdminLogin/vendor/daterangepicker/daterangepicker.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/AdminLogin/vendor/countdowntime/countdowntime.js")></script>
+    <!--===============================================================================================-->
+    <script src=@Url.Content("/Content/AdminLogin/js/main.js")></script>
+
+</body>
+
+
+

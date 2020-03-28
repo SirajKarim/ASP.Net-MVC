@@ -1,0 +1,68 @@
+﻿@model MvcApplication4.Models.Order
+
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Order</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CostumerID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CostumerID)
+            @Html.ValidationMessageFor(model => model.CostumerID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Order_Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Order_Date)
+            @Html.ValidationMessageFor(model => model.Order_Date)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Release_Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Release_Date)
+            @Html.ValidationMessageFor(model => model.Release_Date)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ShippedDate)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ShippedDate)
+            @Html.ValidationMessageFor(model => model.ShippedDate)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Comments)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Comments)
+            @Html.ValidationMessageFor(model => model.Comments)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

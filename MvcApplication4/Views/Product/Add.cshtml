@@ -1,0 +1,95 @@
+﻿@model MvcApplication4.Models.Product
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center><h2 class="h3 mb-3 text-black">Product</h2></center>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <fieldset>
+
+
+
+            <center>
+                <div class="col-md-7">
+
+                    <form action="#" method="post">
+
+                        <center>
+                            <div class="p-3 p-lg-5 border">
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        @Html.LabelFor(model => model.ProductID)
+                                        @Html.EditorFor(model => model.ProductID)
+                                        @Html.ValidationMessageFor(model => model.ProductID)
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        @Html.LabelFor(model => model.Product_Name)
+                                        @Html.EditorFor(model => model.Product_Name)
+                                        @Html.ValidationMessageFor(model => model.Product_Name)
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        @Html.LabelFor(model => model.Description)
+                                        @Html.EditorFor(model => model.Description)
+                                        @Html.ValidationMessageFor(model => model.Description)
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        @Html.LabelFor(model => model.PriceEach)
+                                        @Html.EditorFor(model => model.PriceEach)
+                                        @Html.ValidationMessageFor(model => model.PriceEach)
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        @Html.LabelFor(model => model.Category)
+                                        @Html.EditorFor(model => model.Category)
+                                        @Html.ValidationMessageFor(model => model.Category)
+
+
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-12">
+                                        @Html.LabelFor(model => model.Quantity)
+                                        @Html.EditorFor(model => model.Quantity)
+                                        @Html.ValidationMessageFor(model => model.Quantity)
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Create">
+                    </form>
+
+                </div>
+            </center>
+        </fieldset>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+

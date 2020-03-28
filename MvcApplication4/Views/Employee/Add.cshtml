@@ -1,0 +1,110 @@
+﻿@model MvcApplication4.Models.Employee
+
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<center><h2 class="h3 mb-3 text-black">Employer</h2></center>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+
+
+
+
+        <center>
+            <div class="col-md-7">
+
+                <form action="#" method="post">
+
+                    <center>
+                        <div class="p-3 p-lg-5 border">
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.EmployeeID)
+                                    @Html.EditorFor(model => model.EmployeeID)
+                                    @Html.ValidationMessageFor(model => model.EmployeeID)
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.BirthDate)
+                                    @Html.EditorFor(model => model.BirthDate)
+                                    @Html.ValidationMessageFor(model => model.BirthDate)
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.FirstName)
+                                    @Html.EditorFor(model => model.FirstName)
+                                    @Html.ValidationMessageFor(model => model.FirstName)
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.LastName)
+                                    @Html.EditorFor(model => model.LastName)
+                                    @Html.ValidationMessageFor(model => model.LastName)
+
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    @Html.LabelFor(model => model.Gender)
+                                    @Html.EditorFor(model => model.Gender)
+                                    @Html.ValidationMessageFor(model => model.Gender)
+
+
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-lg-12">
+                                    @Html.LabelFor(model => model.HireDate)
+                                    @Html.EditorFor(model => model.HireDate)
+                                    @Html.ValidationMessageFor(model => model.HireDate)
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </center>
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Create">
+                </form>
+
+            </div>
+        </center>
+    </fieldset>
+}
+
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
