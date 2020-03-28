@@ -1,0 +1,59 @@
+﻿@model OnlinePrintingSolution.Models.Contact
+
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Contact</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PersonId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PersonId)
+            @Html.ValidationMessageFor(model => model.PersonId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContactTypeId)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContactTypeId)
+            @Html.ValidationMessageFor(model => model.ContactTypeId)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.contact)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.contact)
+            @Html.ValidationMessageFor(model => model.contact)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ContactTypeName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ContactTypeName)
+            @Html.ValidationMessageFor(model => model.ContactTypeName)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

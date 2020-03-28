@@ -1,0 +1,39 @@
+﻿@model IEnumerable<OnlinePrintingSolution.Models.MaterialType>
+
+@{
+    ViewBag.Title = "ShowAll";
+}
+
+<h2>ShowAll</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialTypId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaterialName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialTypId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaterialName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Update", new { MaterialTypId=item.MaterialTypId}) |
+            @Html.ActionLink("Details", "Details", new { MaterialTypId=item.MaterialTypId }) |
+            @Html.ActionLink("Delete", "Delete", new { MaterialTypId=item.MaterialTypId })
+        </td>
+    </tr>
+}
+
+</table>

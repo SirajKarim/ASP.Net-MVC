@@ -1,0 +1,51 @@
+﻿@model IEnumerable<OnlinePrintingSolution.Models.Contact>
+
+@{
+    ViewBag.Title = "ShowAll";
+}
+
+<h2>ShowAll</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactTypeId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactTypeName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactTypeId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactTypeName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Update", new { ContactTypeId=item.ContactTypeId }) |
+            @Html.ActionLink("Details", "Details", new { ContactTypeId=item.ContactTypeId }) |
+            @Html.ActionLink("Delete", "Delete", new { ContactTypeId=item.ContactTypeId})
+        </td>
+    </tr>
+}
+
+</table>
