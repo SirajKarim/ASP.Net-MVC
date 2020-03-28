@@ -1,0 +1,40 @@
+﻿@model List<Lesson5.Models.Book>
+@{
+    ViewBag.Title = "Shoow";
+}
+
+<h2>Shoow</h2>
+
+<table>
+    <tr>
+        <th>
+            ISBN
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Author
+        </th>
+        <th>
+            Price
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @item.ISBN
+    </td>
+    <td>
+        @item.Name
+    </td>
+    <td>
+        @item.Author
+    </td>
+    <td>
+        @item.Price
+    </td>
+</tr>
+    }
+</table>

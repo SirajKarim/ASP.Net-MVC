@@ -1,0 +1,38 @@
+﻿@model Lesson5.Models.Show
+@{
+    ViewBag.Title = "Dropdowns";
+}
+
+<h2>Dropdowns</h2>
+
+@Html.DropDownList("M_ID", new SelectList(ViewBag.i,"Movie_ID","Name"), "-- Select Permit --", htmlAttributes: new { @class = "form-control", @onchange = "FillBooks()" })
+<br/>
+<select id="S_ID">
+    <option>---Select Show---</option>
+</select>
+
+<script type="text/javascript">
+
+    function FillBooks() {
+
+
+        var M_ID = $('#M_ID').val();
+        //console.log(M_ID);
+
+        $.ajax({
+            url: 'Show_Shows',
+            type: "GET",
+            dataType: "JSON",
+            data: { M_ID: M_ID },
+            success: function (response) {
+                console.log(response);
+                $("#S_ID").html("");
+                $.each(response, function (index, value) {
+                    $("#S_ID").append(
+                        $('<option></option>').val(value.Name).html(value.Time));
+                });
+            }
+        });
+    }
+
+</script>

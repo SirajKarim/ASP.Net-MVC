@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Lesson5.Models.Book>
+
+@{
+    ViewBag.Title = "ShowAll";
+}
+
+<h2>ShowAll</h2>
+<p>@ViewBag.i</p>
+<p>@ViewData["j"]</p>
+<p>@Session["a"] </p>
+@using (Html.BeginForm("New_Action", "Book"))
+{
+    <input type="text" name="abc" />
+    <button type="submit">Search</button>
+}
+@using (Html.BeginForm("sort", "Book"))
+{
+    <p>
+        ISBN <input type="checkbox" name="abc" value="ISBN" />
+        Name <input type="checkbox" name="abc" value="Name" />
+        Author <input type="checkbox" name="abc" value="Author" />
+        Price <input type="checkbox" name="abc" value="Price" />
+    </p>
+    <button type="submit">Sort</button>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ISBN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ISBN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Author)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Update", new { isbn = item.ISBN })|
+                    @Html.ActionLink("Details", "Details", new { isbn = item.ISBN }) |
+                    @Html.ActionLink("Delete", "Delete", new { isbn = item.ISBN })
+                </td>
+            </tr>
+    }
+    @Html.ActionLink("Back to List", "ShowAll")
+</table>

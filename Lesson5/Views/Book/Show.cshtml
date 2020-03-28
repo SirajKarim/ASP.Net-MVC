@@ -1,0 +1,58 @@
+﻿@model List<Lesson5.Models.Book>
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show</h2>
+@*@for (int i = 0; i < Model.Count; i++)
+    {
+        <p>Model[i].ISBN</p>
+        <p>Name : + Model[i].Name</p>
+        <p>Author : + Model[i].Author</p>
+        <p>Price : + Model[i].Price</p>
+    }*@
+
+<table>
+    <tr>
+        <th>
+            ISBN
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Author
+        </th>
+        <th>
+            Price
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        @*<p>
+            ISBN : @item.ISBN |
+            Name : @item.Name |
+            Author : @item.Author |
+            Price : @item.Price
+
+        </p>*@
+
+        <tr>
+            <td>
+                 @item.ISBN   
+            </td>
+            
+            <td>
+
+                 @item.Name
+            </td>
+            <td>
+                 @item.Author  
+            </td>
+          
+            <td>
+              @item.Price
+            </td>
+        </tr>
+    }
+</table>

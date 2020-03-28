@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Lesson5.Models.Students>
+
+@{
+    ViewBag.Title = "shows";
+}
+
+<h2>shows</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.St_Cateogry_ID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in ViewBag.i) {
+    <tr>
+        <td>
+           <img src="~/Images/@item.Name" width="100" height="100" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.St_Cateogry_ID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
