@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Wedding Invitation</h2>
+<p>Welcome to our website @DateTime.Now.ToShortDateString()
+</p>
+<p>
+        <b>BrideName:</b> Shoaib Karim<br /> 
+        <b>Event:</b> NorthMarraige<br />
+        <b>EventAddres:</b>abc.xyz<br />
+        <b>Walima:</b> sunday<br />
+</p>
+<p>Please click in this event</p>
+@Html.ActionLink("Go To Registration Page","RegistrationPage","Home");

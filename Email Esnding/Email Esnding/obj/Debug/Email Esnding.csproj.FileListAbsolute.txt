@@ -1,0 +1,26 @@
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\Email Esnding.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\Email Esnding.pdb
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\Microsoft.Web.Infrastructure.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\Newtonsoft.Json.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Net.Http.Formatting.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Helpers.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Http.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Http.WebHost.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Mvc.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Razor.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.WebPages.Deployment.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.WebPages.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.WebPages.Razor.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\Newtonsoft.Json.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Net.Http.Formatting.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Helpers.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Http.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Http.WebHost.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Mvc.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.Razor.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.WebPages.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.WebPages.Deployment.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\bin\System.Web.WebPages.Razor.xml
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\obj\Debug\Email Esnding.csprojResolveAssemblyReference.cache
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\obj\Debug\Email Esnding.dll
+c:\users\muhammad siraj\documents\visual studio 2012\Projects\Email Esnding\Email Esnding\obj\Debug\Email Esnding.pdb
